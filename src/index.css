@@ -1,3 +1,39 @@
 body{
+  font-family: "Montserrat", sans-serif;
   background-color: aliceblue;
+}
+img{
+  width: 100%;
+  vertical-align: top;
+}
+a{
+  font-size: 0.8rem;
+}
+.presentacion{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap; /*Si no cabe en una fina que tome las que sean necesarias*/
+  justify-content: space-between; /* Se ajuste a nivel horizontal*/
+}
+.usuario{
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px dotted black;
+  box-sizing: border-box;
+  width: 49.5%;
+}
+.foto{
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: hidden; /*Esquinas de las fotos de vean redondeadas*/
+  margin-right: 20px;
+  width: 170px;
+}
+.datos{
+  flex: 1;
+}
+.botones{
+width: 110px;
 }
