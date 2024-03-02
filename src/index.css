@@ -31,6 +31,34 @@ a{
   margin-right: 20px;
   width: 170px;
 }
+button{
+  padding:  6px 12px;
+  outline: none; /* cuando se clique no tenga el borde seleccionado*/
+  border-radius: 3px;
+  width: 98px;
+  margin: 4px;
+  cursor: pointer;
+}
+.rojo{
+  background-color: rgb(227, 28, 28);
+  border: 1px solid rgb(235, 162, 162);
+  color: white;
+}
+.rojo:hover{ /* Al pasar el mouse por encima cambia el color*/
+  background-color: rgb(206, 91, 91);
+  border-radius: 10px;
+  color: white;
+}
+.verde{
+  background-color: rgb(4, 195, 4);
+  border: 1px solid greenyellow;
+  color: white;
+}
+.verde:hover{ /* Al pasar el mouse por encima cambia el color*/
+  background-color: rgb(111, 164, 111);
+  color: white;
+  border-radius: 10px;
+}
 .datos{
   flex: 1;
 }
