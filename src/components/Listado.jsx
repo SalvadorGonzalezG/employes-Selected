@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react"
 import Candidato from "./Candidato";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {agregarUnValor} from '../features/miSlice/miSlice';
+import { Link } from "react-router-dom";
 
 const Listado = () => {
 // Declaracion del estado     
     const [candidatos, setCandidatos] = useState([]);
+// Leemos el store con useSelector.
+    const listaTrabajadores = useSelector(state => state.misTrabajadores.trabajadores)
 // funcion dispatch
   const dispatch = useDispatch()
     useEffect(() => {
@@ -39,6 +42,10 @@ const Listado = () => {
     <Candidato valor={valor} onGuardarUno={guardarUno} index={index} onBuscarUno={buscarUno}/>
     )}
     </div>
+    <div className="candidatos">
+      {listaTrabajadores.map((valor, i)=>
+      <Link key={i} to='/gestion'><button>{valor.name.first}</button></Link>)}
+      </div>
     </>
     
   )

@@ -9,6 +9,17 @@ img{
 a{
   font-size: 0.8rem;
 }
+.usuarios{
+  display: grid;
+  gap:  8px; /*Separacion entre elementos. */
+  grid-template-columns:  repeat(5, 1fr);
+  text-align: center;
+  margin-top: 12px;
+}
+.nombreUsuarios{
+  font-size: 1.04em;
+  margin-top: 8px;
+}
 .presentacion{
   margin-top: 10px;
   display: flex;

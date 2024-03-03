@@ -3,7 +3,7 @@ import {createSlice} from '@reduxjs/toolkit'
 
 // porciones de mi estado para poder acceder a ellas de una manera más rapida.
 export const miSlice = createSlice({
-    name: 'misTrabajaores', // nombre del slice
+    name: 'misTrabajadores', // nombre del slice
     initialState: {
     trabajadores: [],
     },
@@ -21,4 +21,4 @@ export const departamentosSlice = createSlice({
     }
 })
 
-export const {agregarUnValor} = miSlice.actions
+export const {agregarUnValor} = miSlice.actions;
