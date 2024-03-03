@@ -32,8 +32,9 @@ const Listado = () => {
         })
     }
 
-    const guardarUno = (valor) => {
+    const guardarUno = (valor, index) => {
       dispatch(agregarUnValor(valor))
+      buscarUno(index)
     }
   return (
     <>
