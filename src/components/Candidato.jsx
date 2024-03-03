@@ -1,6 +1,6 @@
 
 
-const Candidato = ({valor, onBuscarUno, index}) => {
+const Candidato = ({valor, onBuscarUno, index, onGuardarUno}) => {
   return (
     <div className="usuario">
         <div className="foto">
@@ -14,7 +14,7 @@ const Candidato = ({valor, onBuscarUno, index}) => {
             </div>
             <div  className="botones">
             <button onClick={()=>onBuscarUno(index)} className="rojo">Ocultar</button>
-            <button className="verde">Guardar</button>
+            <button onClick={()=>onGuardarUno(valor)} className="verde">Guardar</button>
             </div>
     </div>
   )
